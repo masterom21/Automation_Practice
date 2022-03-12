@@ -1,0 +1,285 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11210394300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "As a user I want to create new account with valid credentials",
+        "description": "",
+        "id": "create-account-test;as-a-user-i-want-to-create-new-account-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1686140600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1989179500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on the sign in button from the homepage",
+            "match": {
+              "location": "AccountStepdefs.userClicksOnTheSignInButtonFromTheHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165983100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enters an email in the email address field",
+            "match": {
+              "location": "AccountStepdefs.entersAnEmailInTheEmailAddressField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180894300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks on create an account tab",
+            "match": {
+              "location": "AccountStepdefs.clicksOnCreateAnAccountTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3432302100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "fill all mandatory fields",
+            "match": {
+              "location": "AccountStepdefs.fillAllMandatoryFields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Harry",
+                  "Potter",
+                  "abc12745",
+                  "123 Abc Street",
+                  "Dallas",
+                  "Texas",
+                  "12345",
+                  "United States",
+                  "01234567890"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1938631800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on register",
+            "match": {
+              "location": "AccountStepdefs.clickOnRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56621900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify my account text \"MY ACCOUNT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 24
+                }
+              ],
+              "location": "AccountStepdefs.verifyMyAccountText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83290700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify user can see his name on top right \"Harry Potter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 43
+                }
+              ],
+              "location": "AccountStepdefs.verifyUserCanSeeHisNameOnTopRight(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Account Test",
+    "description": "\r\nAs a user i should able to create account successful\r\n\r\n//@regression",
+    "id": "create-account-test",
+    "keyword": "Feature",
+    "uri": "CreateAccount.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 97300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am in home page",
+            "match": {
+              "location": "ShoppingCartStepdefs.iAmInHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6273355300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify user able to browse the store on map",
+        "description": "",
+        "id": "find-store-on-map;verify-user-able-to-browse-the-store-on-map",
+        "after": [
+          {
+            "result": {
+              "duration": 1325020400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4215739400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select On \"Our stores\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Our stores",
+                  "offset": 13
+                }
+              ],
+              "location": "OurStoreStepdefs.iSelectOn(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136239600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on OK button",
+            "match": {
+              "location": "OurStoreStepdefs.iClickOnOKButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185334400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click On zoomOut",
+            "match": {
+              "location": "OurStoreStepdefs.iClickOnZoomOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 714805400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I take screenshot",
+            "match": {
+              "location": "OurStoreStepdefs.iTakeScreenshot()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Find Store On Map",
+    "description": "As a user I want to browse store on map and take screenshot for future reference",
+    "id": "find-store-on-map",
+    "keyword": "Feature",
+    "uri": "FindStore.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  }
+]
